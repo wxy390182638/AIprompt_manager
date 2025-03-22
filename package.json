@@ -1,0 +1,49 @@
+{
+  "name": "prompt-manager",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A Chrome extension for managing prompts",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build && copy manifest.json build\\ && copy src\\background.ts build\\background.js && xcopy /E /I /Y icons build\\icons",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.0",
+    "@fontsource/roboto": "^5.2.5",
+    "@mui/icons-material": "^5.15.13",
+    "@mui/material": "^5.15.13",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.0.263",
+    "@types/node": "^20.11.28",
+    "@types/react": "^18.2.66",
+    "@types/react-dom": "^18.2.22",
+    "ajv": "^8.12.0",
+    "ajv-keywords": "^5.1.0",
+    "react-scripts": "5.0.1",
+    "typescript": "^4.9.5"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
